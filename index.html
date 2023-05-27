@@ -3,37 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garima More</title>
+    <title>Garima More - Web Developer</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            background: url("http://getwallpapers.com/wallpaper/full/e/3/d/15259.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        /* Rest of the CSS code... */
+
+        /* Custom Styles */
+        .profile {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            margin-bottom: 20px;
+            border: 5px solid #ffd700;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #333;
+        }
+
+        .profile h2 {
+            margin-top: 10px;
+            color: #666;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .nav-container {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Rest of the CSS code... */
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="profile">
-                <img src="https://lh3.googleusercontent.com/rBlH4FJPm3CRGVntHOgrxdyYG0b7XmlY20EgzZSeY233Cg4d-XDgE3041eSWw-AxCDKmNqcLrDfPP2LhNFzDzRoC0jdQNeZQNIL1xyM2IwdrQ6rWkpTwz7j8i3-mzuyv0MdycWZmB98b89hD7epl6O_7Z8AVobLQEfJNQ24CsSxn9R77FGpLx0ih_Kf3ktlp6FgRk5NViZAUW34kg5X6mb_jkDAy-0X8_e31QxMaoXoeSELtOSPqdwS12kTIRpGy1U_gDX28EQbIlAS-e48iM8OoNL87_tP7g174TPQyhEAiHdPnHju2fL84VNnOZDdR3N6HsYCLzaggVExDBmnxn__51pTSkrtjGkKE1nNjpHGowMldudrY5wl1Yk_jnfVWIIpehpoXp7YvoFVFVrJQ8P7gDksNrs-UqP1cp63KVwmH_YsRChFknn2Fus7nlezZypm25GWOCDP2UIbK7Lgibfc2rThC0xiCTktr13OG4cH-zRYqiefTZdduWmwbMPs5TkWrfzamAjxOCSrjgFCHlUwyymN_RzIkXoKVHOfGgbZpFN3f_J81ppwd_bsczPOgAG-kWXIV8WrRmhNf4EYM3HT5IA1jfeLoHYFzD4SnuWCUxcTtUhUMCSTt3BdJdAxtYCc5utqehJo1wEVQ4YELv0irrxVLG1AKsyQ-C8cD9IEvDgvqVFwUSR9PxA4cB7DBqhIyPAvy_JC7uGV5ut5m5S-dvGZ97Uq-AHIhMzPI2-cIzgPnw9Y1iRNIjlAKHMn2xXj7JK-rzV0vQySeXe7EiryKGbQUHCtJtvypVG9z_eOk7Cptxq_5Mn0b6NK7HiHm-Cmgfh8o7wufkvNvst0_Fy1-2fPjrldG41DkbZDuNzD-ge-lh3nYxrQ69PKlrJa5P2TbZkK5rGa7AxBSHryfAl25NnqIEcjw_F8Pgg4GfRkC=w370-h657-s-no?authuser=0" alt="Garima More" width="300" height="400">
+                <img src="https://lh3.googleusercontent.com/rBlH4FJPm3CRGVntHOgrxdyYG0b7XmlY20EgzZSeY233Cg4d-XDgE3041eSWw-AxCDKmNqcLrDfPP2LhNFzDzRoC0jdQNeZQNIL1xyM2IwdrQ6rWkpTwz7j8i3-mzuyv0MdycWZmB98b89hD7epl6O_7Z8AVobLQEfJNQ24CsSxn9R77FGpLx0ih_Kf3ktlp6FgRk5NViZAUW34kg5X6mb_jkDAy-0X8_e31QxMaoXoeSELtOSPqdwS12kTIRpGy1U_gDX28EQbIlAS-e48iM8OoNL87_tP7g174TPQyhEAiHdPnHju2fL84VNnOZDdR3N6HsYCLzaggVExDBmnxn__51pTSkrtjGkKE1nNjpHGowMldudrY5wl1Yk_jnfVWIIpehpoXp7YvoFVFVrJQ8P7gDksNrs-UqP1cp63KVwmH_YsRChFknn2Fus7nlezZypm25GWOCDP2UIbK7Lgibfc2rThC0xiCTktr13OG4cH-zRYqiefTZdduWmwbMPs5TkWrfzamAjxOCSrjgFCHlUwyymN_RzIkXoKVHOfGgbZpFN3f_J81ppwd_bsczPOgAG-kWXIV8WrRmhNf4EYM3HT5IA1jfeLoHYFzD4SnuWCUxcTtUhUMCSTt3BdJdAxtYCc5utqehJo1wEVQ4YELv0irrxVLG1AKsyQ-C8cD9IEvDgvqVFwUSR9PxA4cB7DBqhIyPAvy_JC7uGV5ut5m5S-dvGZ97Uq-AHIhMzPI2-cIzgPnw9Y1iRNIjlAKHMn2xXj7JK-rzV0vQySeXe7EiryKGbQUHCtJtvypVG9z_eOk7Cptxq_5Mn0b6NK7HiHm-Cmgfh8o7wufkvNvst0_Fy1-2fPjrldG41DkbZDuNzD-ge-lh3nYxrQ69PKlrJa5P2TbZkK5rGa7AxBSHryfAl25NnqIEcjw_F8Pgg4GfRkC=w370-h657-s-no?authuser=0" alt="Garima More" width="200" height="200">
                 <h1>Garima More</h1>
-                <h2>Integrated MTECH in IT, IIPS, DAVV Indore</h2>
+                <h2>Web Developer</h2>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#projects">Projects and Assignments</a></li>
-                    <li><a href="#cv">CV</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
+
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     
     <section id="about-me">
         <div class="container">
             <h2>About Me</h2>
             <p>Garima More is a 2nd-year student pursuing Integrated MTECH in IT from IIPS, DAVV Indore. She is passionate about coding and always keen to learn new technologies. Her career goal is to become a software developer.</p>
-            <p>Garima has received several academic awards, including a merit scholarship for securing top position in the 1st year of her course.</p>
+            <p>Garima has received several academic awards, including a merit scholarship for securing the top position in the 1st year of her course.</p>
+            <p>Garima More is a talented web developer known for her exceptional coding skills and outstanding performances in various coding competitions. With a passion for creating innovative and user-friendly web solutions, Garima has proven her expertise in designing and developing cutting-edge websites.</p>
+                <p>Her dedication and attention to detail have led to the successful completion of numerous projects, where she has demonstrated her ability to handle complex coding challenges with ease and deliver high-quality results.</p>
+                <p>Garima's strong foundation in programming concepts and proficiency in various programming languages, frameworks, and tools allow her to create robust and scalable web applications. Her ability to collaborate effectively with teams and clients ensures the seamless execution of projects from start to finish.</p>
+                <p>Driven by her continuous quest for knowledge, Garima remains updated with the latest industry trends and technologies, enabling her to incorporate the best practices and deliver modern, optimized, and visually appealing websites.</p>
+                <p>Connect with Garima on LinkedIn and GitHub to explore her portfolio and stay updated with her latest projects:</p>
             <p>Connect with Garima on LinkedIn and GitHub:</p>
             <ul>
-                <li><a href="https://www.linkedin.com/in/garima-more-3a3780257">LinkedIn profile</a></li>
-                <li><a href="https://github.com/moregarima">GitHub profile</a></li>
+                <li><a href="https://www.linkedin.com/in/garima-more-3a3780257">LinkedIn Profile</a></li>
+                <li><a href="https://github.com/moregarima">GitHub Profile</a></li>
             </ul>
         </div>
     </section>
@@ -42,6 +127,8 @@
         <div class="container">
             <h2>Projects and Assignments</h2>
             <ul>
+                <h3>Project 1</h3>
+                <p>Numerical Analysis and Design</p>
                 <li><a href="https://youtu.be/xGW_KWXG9no">NAD Internal 1 Video solution</a></li>
                 <li><a href="https://youtu.be/1aJEnwYRLrw">NAD Internal 2A Video solution</a></li>
                 <li><a href="https://youtu.be/fsX_zJNXFBM">NAD Internal 2B Video solution</a></li>
@@ -52,34 +139,22 @@
 
     <section id="cv">
         <div class="container">
-            <h2>CV</h2>
-            <p>My CV:</p>
-            <a href="garima_more_cv.html">Garima More CV</a>
+            <h2>Curriculum Vitae</h2>
+            <p>Garima's CV: <a href="garima_more_cv.html">My CV</a></p>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <form action="submit-form.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-    
-                <button type="submit">Send</button>
-            </form>
+            <p>You can reach out to Garima via email: <a href="mailto:garimamore30@gmail.com">garimamore30@gmail.com</a></p>
         </div>
     </section>
-    
+
     <footer>
         <div class="container">
-            <p>&copy; Garima More 2023</p>
+            <p>&copy; 2023 Garima More. All rights reserved.</p>
         </div>
     </footer>
 </body>
 </html>
-    
