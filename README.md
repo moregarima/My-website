@@ -1,2 +1,2 @@
-# My-website
+# Garima More
 This is my website
